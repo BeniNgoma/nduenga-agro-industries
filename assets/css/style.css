@@ -276,6 +276,8 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   bottom: -40px;
   right: -40px;
   pointer-events: none;
+  color: var(--white);
+  line-height: 1;
 }
 
 .hero-leaf2 {
@@ -286,6 +288,8 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   left: -30px;
   pointer-events: none;
   transform: rotate(-30deg);
+  color: var(--white);
+  line-height: 1;
 }
 
 .hero-inner {
@@ -403,7 +407,17 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   border-color: rgba(249,168,37,0.35);
 }
 
-.hero-card-icon { font-size: 1.8rem; margin-bottom: 6px; }
+.hero-card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  width: 52px; height: 52px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 10px;
+}
+.hero-card-icon i { font-size: 1.4rem; color: rgba(255,255,255,0.9); }
+.hero-card.gold-card .hero-card-icon i { color: var(--gold-500); }
 
 .hero-card-num {
   font-family: 'Montserrat', sans-serif;
@@ -523,9 +537,45 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 9rem;
   position: relative;
   overflow: hidden;
+}
+
+.about-icon-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,0.05);
+  z-index: 1;
+}
+
+.about-grid-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.04);
+  transition: var(--ease);
+}
+
+.about-grid-cell:hover { background: rgba(255,255,255,0.09); }
+
+.about-grid-cell i {
+  font-size: 2.4rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.about-grid-cell span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .about-img-overlay {
@@ -610,7 +660,17 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
 }
 .val-card:hover .val-title, .val-card:hover .val-desc { color: var(--white); }
 
-.val-icon { font-size: 1.8rem; margin-bottom: 10px; }
+.val-icon {
+  width: 52px; height: 52px;
+  background: rgba(27,94,32,0.12);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 12px;
+  transition: var(--ease);
+}
+.val-icon i { font-size: 1.3rem; color: var(--green-800); transition: var(--ease); }
+.val-card:hover .val-icon { background: rgba(255,255,255,0.15); }
+.val-card:hover .val-icon i { color: var(--white); }
 .val-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.82rem;
@@ -653,9 +713,16 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.5rem;
   position: relative;
+  overflow: hidden;
 }
+.prod-img i {
+  font-size: 3rem;
+  color: rgba(255,255,255,0.88);
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+  transition: var(--ease);
+}
+.prod-card:hover .prod-img i { transform: scale(1.12); color: var(--white); }
 
 .prod-img.c1 { background: linear-gradient(135deg, #1B5E20, #2E7D32); }
 .prod-img.c2 { background: linear-gradient(135deg, #F57F17, #F9A825); }
@@ -737,11 +804,12 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   background: var(--green-100);
   border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.5rem;
   margin-bottom: 18px;
   transition: var(--ease);
 }
+.srv-icon i { font-size: 1.4rem; color: var(--green-800); transition: var(--ease); }
 .srv-card:hover .srv-icon { background: var(--green-800); }
+.srv-card:hover .srv-icon i { color: var(--white); }
 
 .srv-title {
   font-family: 'Montserrat', sans-serif;
@@ -809,7 +877,20 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; lin
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
-.comp-icon { font-size: 2rem; display: block; margin-bottom: 14px; }
+.comp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  background: rgba(249,168,37,0.15);
+  border: 1px solid rgba(249,168,37,0.25);
+  border-radius: 14px;
+  margin: 0 auto 14px;
+  transition: var(--ease);
+}
+.comp-icon i { font-size: 1.4rem; color: var(--gold-500); transition: var(--ease); }
+.comp-card:hover .comp-icon { background: rgba(249,168,37,0.25); }
+.comp-card:hover .comp-icon i { color: var(--white); }
 .comp-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.82rem;
