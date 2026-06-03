@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nduenga Agro Industries — Production et transformation agricole à Mbanza-Ngungu, Boko, Kongo Central, RDC.">
-  <title>Nduenga Agro Industries | Accueil</title>
+  <meta name="description" content="Nduenga Agro Industries — Production et transformation agricole à Mbanza-Ngungu, Boko, Kongo Central, RDC. Produire au Congo, Transformer au Congo.">
+  <title>Nduenga Agro Industries | Mbanza-Ngungu · Kongo Central</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body class="page-home">
+<body>
 
-<!-- ====== NAVBAR ====== -->
-<nav class="navbar navbar-solid" id="navbar">
+<!-- ============================================================ NAVIGATION -->
+<nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
+    <a href="#accueil" class="nav-logo">
       <div class="nav-logo-box">N</div>
       <div>
         <div class="nav-logo-name">Nduenga</div>
@@ -25,189 +24,604 @@
       </div>
     </a>
     <ul class="nav-menu" id="navMenu">
-      <li><a href="index.html"           class="nav-link active">Accueil</a></li>
-      <li><a href="qui-sommes-nous.html" class="nav-link">Qui sommes-nous</a></li>
-      <li><a href="produits.html"        class="nav-link">Produits</a></li>
-      <li><a href="services.html"        class="nav-link">Services</a></li>
-      <li><a href="impact.html"          class="nav-link">Impact</a></li>
-      <li><a href="contact.html"         class="nav-link cta">Contactez-nous</a></li>
+      <li><a href="#accueil"      class="nav-link">Accueil</a></li>
+      <li><a href="#a-propos"     class="nav-link">À Propos</a></li>
+      <li><a href="#produits"     class="nav-link">Produits</a></li>
+      <li><a href="#services"     class="nav-link">Services</a></li>
+      <li><a href="#impact"       class="nav-link">Impact</a></li>
+      <li><a href="#localisation" class="nav-link">Localisation</a></li>
+      <li><a href="#contact"      class="nav-link cta">Contactez-nous</a></li>
     </ul>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
 </nav>
 
-<!-- ====== HERO BLANC ====== -->
-<section class="hero-white" id="accueil">
-  <div class="hw-inner">
+<!-- ============================================================ HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-inner">
 
-    <!-- Texte gauche -->
-    <div class="hw-text">
-      <div class="hw-eyebrow">
-        <i class="fas fa-leaf"></i>
-        Agriculture · Transformation · Kongo Central
-      </div>
-      <h1 class="hw-title">
-        <span class="hw-big">NDUENGA</span>
-        <span class="hw-sub">AGRO INDUSTRIES</span>
+    <!-- LEFT TEXT -->
+    <div class="hero-text">
+      <div class="hero-eyebrow">Un engagement pour une agriculture moderne, productive et durable</div>
+      <h1 class="hero-title">
+        PROGRAMME DE<br>
+        <span class="hero-big">RELANCE</span><br>
+        <span class="hero-big">AGRICOLE</span><br>
+        <span class="hero-sub">DU KONGO CENTRAL</span>
       </h1>
-      <div class="hw-tagline">Produire au Congo &nbsp;·&nbsp; Transformer au Congo</div>
-      <p class="hw-desc">
-        Premier acteur agro-industriel de <strong>Mbanza-Ngungu, Boko</strong>, nous transformons l'agriculture du
-        <strong>Kongo Central</strong> grâce à des pratiques modernes, durables et inclusives.
-        De la parcelle à l'usine — toute la valeur reste au Congo.
+      <p class="hero-desc">
+        Un programme intégré pour transformer l'agriculture, créer de la valeur et améliorer
+        durablement les conditions de vie des populations rurales de Mbanza-Ngungu, Boko.
       </p>
-      <div class="hw-location">
+      <div class="hero-location">
         <i class="fas fa-map-marker-alt"></i>
-        Mbanza-Ngungu, Boko · Kongo Central · RDC 🇨🇩
+        <span>Mbanza-Ngungu, Boko · Province du Kongo Central · RDC 🇨🇩</span>
       </div>
-      <div class="hw-actions">
-        <a href="qui-sommes-nous.html" class="btn btn-green"><i class="fas fa-users"></i> Qui sommes-nous</a>
-        <a href="produits.html"        class="btn btn-gold"><i class="fas fa-seedling"></i> Nos Produits</a>
-        <a href="contact.html"         class="btn btn-outline-green"><i class="fas fa-handshake"></i> Partenariat</a>
+      <div class="hero-actions">
+        <a href="#produits"  class="btn btn-gold"><i class="fas fa-seedling"></i> Nos Produits</a>
+        <a href="#contact"   class="btn btn-outline-white"><i class="fas fa-handshake"></i> Partenariat</a>
+      </div>
+
+      <!-- Grâce à badge -->
+      <div class="hero-thanks">
+        <div class="hero-thanks-inner">
+          <i class="fas fa-leaf"></i>
+          <div>
+            <span class="ht-top">Tout ceci grâce à</span>
+            <span class="ht-name">NDUENGA<br>AGRO INDUSTRIES</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Mosaïque photo droite — contexte congolais -->
-    <div class="hw-mosaic">
-      <div class="hw-mosaic-top">
-        <!-- Femme agricultrice africaine avec sa récolte -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1592415499556-74fcb9f18667?auto=format&fit=crop&w=500&q=85')"></div>
-        <!-- Champ agricole tropical au lever du soleil -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=500&q=85')"></div>
+    <!-- RIGHT PHOTO MOSAIC (like PDF) -->
+    <div class="hero-mosaic">
+      <div class="mosaic-row-top">
+        <div class="mosaic-photo" style="background-image:url('https://images.unsplash.com/photo-1564094016847-9be5a5a51c46?auto=format&fit=crop&w=500&q=80')"></div>
+        <div class="mosaic-photo" style="background-image:url('https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=500&q=80')"></div>
       </div>
-      <div class="hw-mosaic-mid">
-        <!-- Agriculteurs africains travaillant ensemble dans les champs -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=900&q=85')"></div>
+      <div class="mosaic-row-mid">
+        <div class="mosaic-photo wide" style="background-image:url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=900&q=80')"></div>
       </div>
-      <div class="hw-mosaic-bot">
-        <!-- Récolte de maïs en Afrique centrale -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=300&q=80')"></div>
-        <!-- Soja — culture stratégique du Congo -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=300&q=80')"></div>
-        <!-- Huile végétale produite localement -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=300&q=80')"></div>
-        <!-- Transformation industrielle — usine locale -->
-        <div class="hw-photo" style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=300&q=80')"></div>
+      <div class="mosaic-row-bot">
+        <div class="mosaic-photo" style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=300&q=80')"></div>
+        <div class="mosaic-photo" style="background-image:url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=300&q=80')"></div>
+        <div class="mosaic-photo" style="background-image:url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=300&q=80')"></div>
+        <div class="mosaic-photo" style="background-image:url('https://images.unsplash.com/photo-1581093458791-9f3c3ae58d28?auto=format&fit=crop&w=300&q=80')"></div>
       </div>
     </div>
   </div>
 
-  <!-- 5 piliers -->
-  <div class="hw-pillars">
-    <div class="hw-pillar"><i class="fas fa-seedling"></i><span>Production Accrue</span></div>
-    <div class="hw-pillar"><i class="fas fa-warehouse"></i><span>Infrastructures Modernes</span></div>
-    <div class="hw-pillar"><i class="fas fa-industry"></i><span>Transformation Industrielle</span></div>
-    <div class="hw-pillar"><i class="fas fa-truck-moving"></i><span>Desserte &amp; Transport</span></div>
-    <div class="hw-pillar"><i class="fas fa-users"></i><span>Emplois &amp; Revenus</span></div>
+  <!-- 5 PILLARS BAR -->
+  <div class="hero-pillars">
+    <div class="pillar"><i class="fas fa-seedling"></i><span>Production<br>Accrue</span></div>
+    <div class="pillar"><i class="fas fa-warehouse"></i><span>Infrastructures<br>Modernes</span></div>
+    <div class="pillar"><i class="fas fa-industry"></i><span>Transformation<br>Industrielle</span></div>
+    <div class="pillar"><i class="fas fa-truck-moving"></i><span>Desserte<br>&amp; Transport</span></div>
+    <div class="pillar"><i class="fas fa-users"></i><span>Emplois<br>&amp; Revenus</span></div>
   </div>
 </section>
 
-<!-- ====== STATS ====== -->
-<div class="statsbar">
+<!-- ============================================================ 4 IMPACTS BAR -->
+<div class="impacts-bar">
   <div class="container">
-    <div class="statsbar-grid">
-      <div class="statsbar-item"><div class="statsbar-num"><span data-count="2000">0</span><em>+</em></div><div class="statsbar-lbl">Producteurs Agricoles</div></div>
-      <div class="statsbar-item"><div class="statsbar-num"><span data-count="10000">0</span><em> T</em></div><div class="statsbar-lbl">Capacité Production / An</div></div>
-      <div class="statsbar-item"><div class="statsbar-num"><span data-count="290">0</span><em> km</em></div><div class="statsbar-lbl">Routes Désenclavées</div></div>
-      <div class="statsbar-item"><div class="statsbar-num"><span data-count="500">0</span><em>+</em></div><div class="statsbar-lbl">Emplois Créés</div></div>
+    <div class="impacts-grid">
+      <div class="impact-item">
+        <div class="impact-icon"><i class="fas fa-shield-alt"></i></div>
+        <div>
+          <strong>Sécurité Alimentaire</strong>
+          <p>Renforcer la disponibilité et l'accessibilité des produits alimentaires.</p>
+        </div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-icon"><i class="fas fa-chart-line"></i></div>
+        <div>
+          <strong>Développement Économique</strong>
+          <p>Stimuler la croissance locale et augmenter les revenus des ménages.</p>
+        </div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-icon"><i class="fas fa-users"></i></div>
+        <div>
+          <strong>Inclusion Sociale</strong>
+          <p>Créer des emplois durables et renforcer l'autonomisation des communautés.</p>
+        </div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-icon"><i class="fas fa-road"></i></div>
+        <div>
+          <strong>Désenclavement</strong>
+          <p>Améliorer les infrastructures et ouvrir les territoires au développement.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- ====== APERÇU PRODUITS ====== -->
-<section class="home-section bg-white">
+<!-- ============================================================ STATSBAR -->
+<div class="statsbar">
+  <div class="container">
+    <div class="statsbar-grid">
+      <div class="statsbar-item">
+        <div class="statsbar-num"><span data-count="2000">0</span><em>+</em></div>
+        <div class="statsbar-lbl">Producteurs Agricoles</div>
+      </div>
+      <div class="statsbar-item">
+        <div class="statsbar-num"><span data-count="10000">0</span><em> T</em></div>
+        <div class="statsbar-lbl">Capacité Production Annuelle</div>
+      </div>
+      <div class="statsbar-item">
+        <div class="statsbar-num"><span data-count="290">0</span><em> km</em></div>
+        <div class="statsbar-lbl">Routes Désenclavées</div>
+      </div>
+      <div class="statsbar-item">
+        <div class="statsbar-num"><span data-count="500">0</span><em>+</em></div>
+        <div class="statsbar-lbl">Emplois Créés &amp; Soutenus</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ À PROPOS -->
+<section class="about" id="a-propos">
+  <div class="container">
+    <div class="about-grid">
+      <!-- LEFT TEXT -->
+      <div class="about-text">
+        <div class="section-header" style="text-align:left">
+          <span class="section-tag">Notre Identité</span>
+          <h2 class="section-title">Qui sommes-nous ?</h2>
+          <div class="gold-bar" style="margin-left:0"></div>
+        </div>
+        <p class="about-p">
+          <strong>Nduenga Agro Industries</strong> est une entreprise agro-industrielle congolaise implantée à
+          <strong>Mbanza-Ngungu, Boko</strong>, dans la province du <strong>Kongo Central</strong>.
+          Fondée avec la vision de bâtir une agriculture moderne et souveraine, nous combinons
+          savoir-faire local et technologies innovantes pour créer une chaîne de valeur complète.
+        </p>
+        <p class="about-p">
+          Notre modèle intégré — de la production à la transformation industrielle — permet de maximiser
+          la valeur ajoutée sur le sol congolais, réduire la dépendance aux importations et offrir
+          aux agriculteurs locaux un accès garanti aux marchés.
+        </p>
+        <div class="about-checklist">
+          <div class="about-check"><i class="fas fa-check-circle"></i><span>Production agricole durable</span></div>
+          <div class="about-check"><i class="fas fa-check-circle"></i><span>Transformation industrielle locale</span></div>
+          <div class="about-check"><i class="fas fa-check-circle"></i><span>Logistique et transport moderne</span></div>
+          <div class="about-check"><i class="fas fa-check-circle"></i><span>Énergie solaire agricole</span></div>
+          <div class="about-check"><i class="fas fa-check-circle"></i><span>Formation des producteurs</span></div>
+          <div class="about-check"><i class="fas fa-check-circle"></i><span>Accès au crédit agricole</span></div>
+        </div>
+        <a href="#contact" class="btn btn-green"><i class="fas fa-handshake"></i> Devenir Partenaire</a>
+      </div>
+
+      <!-- RIGHT PHOTO COLLAGE (like PDF page 3) -->
+      <div class="photo-collage">
+        <div class="collage-main">
+          <img src="https://images.unsplash.com/photo-1592415499556-74fcb9f18667?auto=format&fit=crop&w=800&q=80" alt="Agriculteurs du Kongo Central" loading="lazy">
+        </div>
+        <div class="collage-grid">
+          <img src="https://images.unsplash.com/photo-1564094016847-9be5a5a51c46?auto=format&fit=crop&w=400&q=80" alt="Tracteur agricole" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=400&q=80" alt="Silos de stockage" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=800&q=80" alt="Transport agricole" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=400&q=80" alt="Huile végétale" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1581093458791-9f3c3ae58d28?auto=format&fit=crop&w=400&q=80" alt="Usine transformation" loading="lazy">
+        </div>
+        <div class="about-float-badge">
+          <span class="about-float-num">100%</span>
+          <div class="about-float-txt">Congolais<br>Fièrement local</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VALUES -->
+    <div class="values-row">
+      <div class="val-card"><div class="val-icon"><i class="fas fa-bullseye"></i></div><div class="val-title">Mission</div><div class="val-desc">Transformer l'agriculture congolaise pour une souveraineté alimentaire durable</div></div>
+      <div class="val-card"><div class="val-icon"><i class="fas fa-eye"></i></div><div class="val-title">Vision</div><div class="val-desc">Devenir le leader agro-industriel du Kongo Central et de la RDC</div></div>
+      <div class="val-card"><div class="val-icon"><i class="fas fa-scale-balanced"></i></div><div class="val-title">Équité</div><div class="val-desc">Inclusion des femmes, des jeunes et des communautés rurales</div></div>
+      <div class="val-card"><div class="val-icon"><i class="fas fa-leaf"></i></div><div class="val-title">Durabilité</div><div class="val-desc">Pratiques respectueuses de l'environnement et des ressources</div></div>
+      <div class="val-card"><div class="val-icon"><i class="fas fa-handshake"></i></div><div class="val-title">Partenariat</div><div class="val-desc">Synergie avec producteurs, institutions et partenaires</div></div>
+      <div class="val-card"><div class="val-icon"><i class="fas fa-lightbulb"></i></div><div class="val-title">Innovation</div><div class="val-desc">Technologies modernes pour une agriculture compétitive</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PRODUITS -->
+<section class="products" id="produits">
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Nos Productions</span>
       <h2 class="section-title">Produits <span class="green">Agricoles</span> &amp; <span class="gold">Transformés</span></h2>
       <div class="gold-bar"></div>
-      <p class="section-subtitle">De la terre à la table — maïs, soja, huile, farine, ananas, cacao et plus encore.</p>
+      <p class="section-subtitle">De la terre à la table — nous produisons et transformons les meilleures cultures du Kongo Central.</p>
     </div>
-    <div class="home-products-grid">
-      <!-- Maïs récolté en Afrique centrale -->
-      <div class="hp-card" style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=85')">
-        <div class="hp-overlay"><div class="hp-name">Maïs</div><div class="hp-tag">6 000T / an</div></div>
+    <div class="products-grid">
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><span class="prod-badge-top">⭐ Phare</span><div class="prod-photo-title">Maïs</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Production de maïs de haute qualité pour l'alimentation humaine et animale dans toute la région du Kongo Central.</div><span class="prod-tag">6 000T / an</span></div>
       </div>
-      <!-- Gousses de soja — culture phare du Kongo Central -->
-      <div class="hp-card" style="background-image:url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=600&q=85')">
-        <div class="hp-overlay"><div class="hp-name">Soja</div><div class="hp-tag">4 000T / an</div></div>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><span class="prod-badge-top">⭐ Phare</span><div class="prod-photo-title">Soja</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Culture stratégique transformée localement en huile végétale et tourteaux protéinés pour l'élevage.</div><span class="prod-tag">4 000T / an</span></div>
       </div>
-      <!-- Huile végétale — transformation locale -->
-      <div class="hp-card" style="background-image:url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=85')">
-        <div class="hp-overlay"><div class="hp-name">Huile Végétale</div><div class="hp-tag">Transformation</div></div>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><div class="prod-photo-title">Huile Végétale</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Huile raffinée produite localement à Mbanza-Ngungu, pour réduire la dépendance aux importations coûteuses.</div><span class="prod-tag">Transformation</span></div>
       </div>
-      <!-- Ananas tropical — fruit du Congo -->
-      <div class="hp-card" style="background-image:url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=600&q=85')">
-        <div class="hp-overlay"><div class="hp-name">Ananas</div><div class="hp-tag">Export</div></div>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><div class="prod-photo-title">Farine de Maïs</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Farine de haute qualité produite dans notre unité de transformation industrielle de Boko, Kongo Central.</div><span class="prod-tag">Transformation</span></div>
       </div>
-    </div>
-    <div style="text-align:center;margin-top:36px">
-      <a href="produits.html" class="btn btn-green"><i class="fas fa-arrow-right"></i> Voir tous nos produits</a>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><div class="prod-photo-title">Ananas</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Culture tropicale à fort potentiel d'exportation, cultivée dans les conditions optimales du Kongo Central.</div><span class="prod-tag">Frais &amp; Transformé</span></div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><div class="prod-photo-title">Cacao</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Cacao de qualité exportation issu de plantations durables accompagnées par nos équipes agronomiques.</div><span class="prod-tag">Premium Export</span></div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1592924357228-d7e4c1b3e79c?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><div class="prod-photo-title">Tomates &amp; Légumes</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Production maraîchère pour approvisionner les marchés de Mbanza-Ngungu et contribuer à la sécurité alimentaire locale.</div><span class="prod-tag">Maraîchage</span></div>
+      </div>
+
+      <div class="prod-card">
+        <div class="prod-photo" style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=500&q=80')">
+          <div class="prod-overlay"><div class="prod-photo-title">Tourteaux de Soja</div></div>
+        </div>
+        <div class="prod-body"><div class="prod-desc">Sous-produit protéiné de notre presse à huile, valorisé pour l'alimentation animale dans toute la région.</div><span class="prod-tag">Sous-produit valorisé</span></div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ====== APERÇU QUI SOMMES-NOUS ====== -->
-<section class="home-section bg-gray">
+<!-- ============================================================ SERVICES -->
+<section class="services" id="services">
   <div class="container">
-    <div class="home-about-grid">
-      <div class="home-about-photo">
-        <!-- Femme agricultrice congolaise portant sa récolte — symbole de résilience et de travail -->
-        <img src="https://images.unsplash.com/photo-1592415499556-74fcb9f18667?auto=format&fit=crop&w=800&q=85"
-             alt="Femme agricultrice du Kongo Central portant sa récolte — Nduenga Agro Industries" loading="lazy">
-        <div class="home-about-badge">
-          <span class="num">100%</span>
-          <span class="txt">Congolais<br>Fièrement local</span>
+    <div class="section-header">
+      <span class="section-tag">Ce que nous offrons</span>
+      <h2 class="section-title">Nos <span class="green">Services</span> Agro-Industriels</h2>
+      <div class="gold-bar"></div>
+    </div>
+    <div class="services-grid">
+
+      <div class="srv-card">
+        <div class="srv-photo" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=600&q=80')">
+          <div class="srv-photo-overlay"><i class="fas fa-tractor"></i></div>
+        </div>
+        <div class="srv-body">
+          <div class="srv-title">Production Agricole Durable</div>
+          <div class="srv-desc">Accès aux semences certifiées, intrants de qualité et accompagnement agronomique pour maximiser les rendements durablement à Boko.</div>
         </div>
       </div>
-      <div class="home-about-text">
-        <span class="section-tag">Notre Identité</span>
-        <h2 class="section-title" style="text-align:left;margin-top:12px">Qui sommes-<span class="green">nous</span> ?</h2>
-        <div class="gold-bar" style="margin-left:0"></div>
-        <p>
-          <strong>Nduenga Agro Industries</strong> est une entreprise agro-industrielle congolaise implantée à
-          <strong>Mbanza-Ngungu, Boko</strong> dans la province du <strong>Kongo Central</strong>.
-          Nous combinons savoir-faire local et technologies innovantes pour créer une chaîne de valeur agricole
-          complète et inclusive.
-        </p>
-        <p style="margin-top:14px">
-          Notre modèle intégré — de la production à la transformation industrielle — maximise la valeur ajoutée
-          sur le sol congolais et offre aux agriculteurs locaux un accès garanti aux marchés nationaux et régionaux.
-        </p>
-        <div class="home-values">
-          <div class="hv-item"><i class="fas fa-bullseye"></i><span>Mission claire</span></div>
-          <div class="hv-item"><i class="fas fa-leaf"></i><span>Agriculture durable</span></div>
-          <div class="hv-item"><i class="fas fa-handshake"></i><span>Partenariat solide</span></div>
-          <div class="hv-item"><i class="fas fa-users"></i><span>Inclusion sociale</span></div>
+
+      <div class="srv-card">
+        <div class="srv-photo" style="background-image:url('https://images.unsplash.com/photo-1581093458791-9f3c3ae58d28?auto=format&fit=crop&w=600&q=80')">
+          <div class="srv-photo-overlay"><i class="fas fa-industry"></i></div>
         </div>
-        <a href="qui-sommes-nous.html" class="btn btn-green" style="margin-top:24px">
-          <i class="fas fa-arrow-right"></i> En savoir plus
-        </a>
+        <div class="srv-body">
+          <div class="srv-title">Transformation Industrielle</div>
+          <div class="srv-desc">Usine moderne de transformation du soja en huile et tourteaux, et du maïs en farine — toute la valeur ajoutée reste au Congo.</div>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-photo" style="background-image:url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=600&q=80')">
+          <div class="srv-photo-overlay"><i class="fas fa-truck-moving"></i></div>
+        </div>
+        <div class="srv-body">
+          <div class="srv-title">Logistique &amp; Transport</div>
+          <div class="srv-desc">Flotte de 5 camions de 25 tonnes pour la collecte des récoltes et la livraison vers les marchés de Kinshasa.</div>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-photo" style="background-image:url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80')">
+          <div class="srv-photo-overlay"><i class="fas fa-graduation-cap"></i></div>
+        </div>
+        <div class="srv-body">
+          <div class="srv-title">Formation des Producteurs</div>
+          <div class="srv-desc">Programmes de renforcement des capacités agricoles pour les 2 000+ producteurs, coopératives et associations paysannes du Kongo Central.</div>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-photo" style="background-image:url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=600&q=80')">
+          <div class="srv-photo-overlay"><i class="fas fa-hand-holding-dollar"></i></div>
+        </div>
+        <div class="srv-body">
+          <div class="srv-title">Accès au Financement</div>
+          <div class="srv-desc">Facilitation de l'accès au crédit agricole via les AVEC et institutions partenaires pour soutenir les initiatives des producteurs.</div>
+        </div>
+      </div>
+
+      <div class="srv-card">
+        <div class="srv-photo" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80')">
+          <div class="srv-photo-overlay"><i class="fas fa-solar-panel"></i></div>
+        </div>
+        <div class="srv-body">
+          <div class="srv-title">Énergie Solaire Agricole</div>
+          <div class="srv-desc">Solutions photovoltaïques pour l'irrigation, le stockage et la transformation — réduisant les coûts et l'empreinte carbone.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PROGRAMME (like PDF page 4) -->
+<section class="programme" id="programme">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Programme Intégré</span>
+      <h2 class="section-title">5 Composantes <span class="gold">Complémentaires</span></h2>
+      <div class="gold-bar"></div>
+      <p class="section-subtitle">Un programme structuré autour de cinq piliers pour garantir une transformation agricole durable, inclusive et à fort impact économique.</p>
+    </div>
+    <div class="compos-grid">
+
+      <div class="comp-card">
+        <div class="comp-top">
+          <div class="comp-num">— 01 —</div>
+          <div class="comp-icon"><i class="fas fa-tractor"></i></div>
+          <div class="comp-title">Production Agricole Durable</div>
+          <div class="comp-desc">Amélioration des pratiques culturales, accès aux intrants et agriculture intelligente face au climat</div>
+        </div>
+        <div class="comp-photo" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=80')"></div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-top">
+          <div class="comp-num">— 02 —</div>
+          <div class="comp-icon"><i class="fas fa-tools"></i></div>
+          <div class="comp-title">Matériels Aratoires</div>
+          <div class="comp-desc">Outils agricoles adaptés pour accroître la productivité et réduire la pénibilité du travail</div>
+        </div>
+        <div class="comp-photo" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80')"></div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-top">
+          <div class="comp-num">— 03 —</div>
+          <div class="comp-icon"><i class="fas fa-warehouse"></i></div>
+          <div class="comp-title">Infrastructures &amp; Transformation</div>
+          <div class="comp-desc">Silos de stockage et usine de transformation industrielle pour créer de la valeur locale</div>
+        </div>
+        <div class="comp-photo" style="background-image:url('https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=400&q=80')"></div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-top">
+          <div class="comp-num">— 04 —</div>
+          <div class="comp-icon"><i class="fas fa-users-gear"></i></div>
+          <div class="comp-title">Renforcement des Capacités</div>
+          <div class="comp-desc">Formation des producteurs, inclusion des femmes et des jeunes, appui aux organisations paysannes</div>
+        </div>
+        <div class="comp-photo" style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=400&q=80')"></div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-top">
+          <div class="comp-num">— 05 —</div>
+          <div class="comp-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="comp-title">Accès au Financement &amp; Marchés</div>
+          <div class="comp-desc">Facilitation du crédit et connexion aux marchés locaux, régionaux et internationaux</div>
+        </div>
+        <div class="comp-photo" style="background-image:url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=400&q=80')"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ IMPACT (like PDF page 7) -->
+<section class="impact" id="impact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Notre Impact</span>
+      <h2 class="section-title">Des Résultats <span class="green">Concrets</span> pour le <span class="gold">Kongo Central</span></h2>
+      <div class="gold-bar"></div>
+    </div>
+
+    <!-- Photo hero for impact -->
+    <div class="impact-hero-photo" style="background-image:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80')">
+      <div class="ihp-overlay">
+        <div class="ihp-stat"><span class="ihp-num">+ 5%</span><span class="ihp-lbl">Augmentation des revenus agricoles</span></div>
+        <div class="ihp-stat"><span class="ihp-num">24 mois</span><span class="ihp-lbl">Durée du programme</span></div>
+        <div class="ihp-stat"><span class="ihp-num">2M+</span><span class="ihp-lbl">Bénéficiaires indirects</span></div>
+      </div>
+    </div>
+
+    <!-- 6 impact cards with photos -->
+    <div class="impact-cards">
+
+      <div class="impact-card">
+        <div class="ic-photo" style="background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=400&q=80')"></div>
+        <div class="ic-body">
+          <div class="ic-num">01</div>
+          <div class="ic-title">Renforcer la Sécurité Alimentaire</div>
+          <div class="ic-desc">Augmentation durable de la production de maïs et de soja, améliorant la disponibilité et l'accès à une alimentation de qualité.</div>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="ic-photo" style="background-image:url('https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=400&q=80')"></div>
+        <div class="ic-body">
+          <div class="ic-num">02</div>
+          <div class="ic-title">Réduire les Pertes Post-Récolte</div>
+          <div class="ic-desc">Grâce à des infrastructures de stockage modernes (silos) et de meilleures pratiques de manutention et de conservation.</div>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="ic-photo" style="background-image:url('https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=400&q=80')"></div>
+        <div class="ic-body">
+          <div class="ic-num">03</div>
+          <div class="ic-title">Désenclaver les Zones Rurales</div>
+          <div class="ic-desc">Réhabilitation de 290 km de routes de desserte agricole facilitant l'accès aux marchés et aux opportunités économiques.</div>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="ic-photo" style="background-image:url('https://images.unsplash.com/photo-1592415499556-74fcb9f18667?auto=format&fit=crop&w=400&q=80')"></div>
+        <div class="ic-body">
+          <div class="ic-num">04</div>
+          <div class="ic-title">Créer des Emplois Locaux</div>
+          <div class="ic-desc">Génération d'emplois directs et indirects pour les jeunes, les femmes et les populations rurales de Mbanza-Ngungu.</div>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="ic-photo" style="background-image:url('https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=400&q=80')"></div>
+        <div class="ic-body">
+          <div class="ic-num">05</div>
+          <div class="ic-title">Réduire les Importations d'Huile</div>
+          <div class="ic-desc">Production locale de soja et transformation en huile végétale pour renforcer la souveraineté alimentaire du Congo.</div>
+        </div>
+      </div>
+
+      <div class="impact-card">
+        <div class="ic-photo" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=80')"></div>
+        <div class="ic-body">
+          <div class="ic-num">06</div>
+          <div class="ic-title">Stimuler l'Économie Régionale</div>
+          <div class="ic-desc">Dynamisation des échanges, augmentation des revenus, attraction des investissements et croissance inclusive du Kongo Central.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Results numbers -->
+    <div class="results-grid">
+      <div class="res-card"><div class="res-num">6 000T</div><div class="res-lbl">Production de maïs par an</div></div>
+      <div class="res-card gold"><div class="res-num">4 000T</div><div class="res-lbl">Production de soja par an</div></div>
+      <div class="res-card gold"><div class="res-num">2 000+</div><div class="res-lbl">Producteurs agricoles partenaires</div></div>
+      <div class="res-card"><div class="res-num">+ 5%</div><div class="res-lbl">Augmentation des revenus agricoles</div></div>
+      <div class="res-card"><div class="res-num">5 camions</div><div class="res-lbl">Collecte agricole (25T chacun)</div></div>
+      <div class="res-card gold"><div class="res-num">290 km</div><div class="res-lbl">Routes agricoles réhabilitées</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ LOCALISATION -->
+<section class="location" id="localisation">
+  <div class="container">
+    <div class="location-grid">
+      <div class="location-text">
+        <div class="section-header" style="text-align:left">
+          <span class="section-tag">Notre Implantation</span>
+          <h2 class="section-title">Au Cœur du <span class="green">Kongo Central</span></h2>
+          <div class="gold-bar" style="margin-left:0"></div>
+        </div>
+        <p class="location-p">Stratégiquement implantée à <strong>Mbanza-Ngungu, Boko</strong>, Nduenga Agro Industries bénéficie d'un emplacement privilégié dans la province du Kongo Central — région au potentiel agricole exceptionnel, bien connectée à Kinshasa et aux corridors commerciaux régionaux.</p>
+        <div class="location-items">
+          <div class="loc-item"><div class="loc-icon"><i class="fas fa-building"></i></div><div><div class="loc-lbl">Siège Social</div><div class="loc-val">Mbanza-Ngungu, Territoire de Boko, Province du Kongo Central, RDC</div></div></div>
+          <div class="loc-item"><div class="loc-icon"><i class="fas fa-industry"></i></div><div><div class="loc-lbl">Unité Industrielle</div><div class="loc-val">Zone Agro-industrielle, Mbanza-Ngungu, Kongo Central</div></div></div>
+          <div class="loc-item"><div class="loc-icon"><i class="fas fa-warehouse"></i></div><div><div class="loc-lbl">Silos de Stockage</div><div class="loc-val">2 silos de 250 tonnes — Mbanza-Ngungu &amp; Kinshasa</div></div></div>
+          <div class="loc-item"><div class="loc-icon"><i class="fas fa-route"></i></div><div><div class="loc-lbl">Zone d'Intervention</div><div class="loc-val">Kongo Central — Mbanza-Ngungu, Boko et territoires environnants</div></div></div>
+        </div>
+        <a href="https://maps.google.com/?q=Mbanza-Ngungu,Kongo+Central,DRC" target="_blank" rel="noopener noreferrer" class="btn btn-green"><i class="fas fa-map-marked-alt"></i> Voir sur Google Maps</a>
+      </div>
+      <div class="map-box">
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" alt="Kongo Central paysage agricole" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        <div class="map-box-overlay">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Mbanza-Ngungu</h3>
+          <p><strong>Boko · Kongo Central</strong></p>
+          <p>République Démocratique du Congo 🇨🇩</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== 4 IMPACTS ====== -->
-<div class="impacts-bar">
+<!-- ============================================================ CONTACT -->
+<section class="contact" id="contact">
   <div class="container">
-    <div class="impacts-grid">
-      <div class="impact-item"><div class="impact-icon"><i class="fas fa-shield-alt"></i></div><div><strong>Sécurité Alimentaire</strong><p>Renforcer la disponibilité et l'accessibilité des produits alimentaires.</p></div></div>
-      <div class="impact-item"><div class="impact-icon"><i class="fas fa-chart-line"></i></div><div><strong>Développement Économique</strong><p>Stimuler la croissance locale et augmenter les revenus des ménages.</p></div></div>
-      <div class="impact-item"><div class="impact-icon"><i class="fas fa-users"></i></div><div><strong>Inclusion Sociale</strong><p>Créer des emplois durables et renforcer l'autonomisation des communautés.</p></div></div>
-      <div class="impact-item"><div class="impact-icon"><i class="fas fa-road"></i></div><div><strong>Désenclavement</strong><p>Améliorer les infrastructures et ouvrir les territoires au développement.</p></div></div>
+    <div class="section-header">
+      <span class="section-tag">Parlons Affaires</span>
+      <h2 class="section-title">Contactez <span class="green">Nduenga</span> Agro Industries</h2>
+      <div class="gold-bar"></div>
+      <p class="section-subtitle">Producteur, investisseur, institution ou consommateur ? Contactez-nous pour explorer les opportunités de collaboration.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Restons en Contact</h3>
+        <p>Notre équipe est disponible pour répondre à toutes vos questions sur nos produits, services et opportunités de partenariat.</p>
+        <div class="contact-items">
+          <div class="cont-item"><div class="cont-icon"><i class="fas fa-map-marker-alt"></i></div><div><div class="cont-lbl">Adresse</div><div class="cont-val">Mbanza-Ngungu, Boko<br>Province du Kongo Central, RDC</div></div></div>
+          <div class="cont-item"><div class="cont-icon"><i class="fas fa-phone"></i></div><div><div class="cont-lbl">Téléphone &amp; WhatsApp</div><div class="cont-val">+243 XXX XXX XXX</div></div></div>
+          <div class="cont-item"><div class="cont-icon"><i class="fas fa-envelope"></i></div><div><div class="cont-lbl">Email</div><div class="cont-val">info@nduenga-agroind.cd</div></div></div>
+          <div class="cont-item"><div class="cont-icon"><i class="fas fa-clock"></i></div><div><div class="cont-lbl">Heures d'ouverture</div><div class="cont-val">Lundi – Samedi : 8h00 – 17h00</div></div></div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="soc-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="soc-btn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="soc-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="soc-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <h4>Envoyez-nous un Message</h4>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>Prénom &amp; Nom *</label><input type="text" placeholder="Jean Mukendi" required></div>
+            <div class="form-group"><label>Organisation</label><input type="text" placeholder="Votre organisation"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email *</label><input type="email" placeholder="jean@exemple.cd" required></div>
+            <div class="form-group"><label>Téléphone</label><input type="tel" placeholder="+243 XXX XXX XXX"></div>
+          </div>
+          <div class="form-group">
+            <label>Objet *</label>
+            <select required>
+              <option value="">— Sélectionner —</option>
+              <option>Achat de produits agricoles</option>
+              <option>Partenariat commercial</option>
+              <option>Investissement agricole</option>
+              <option>Formation agricole</option>
+              <option>Financement et crédit</option>
+              <option>Information générale</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message *</label><textarea placeholder="Décrivez votre demande..." required></textarea></div>
+          <button type="submit" class="btn btn-green form-submit"><i class="fas fa-paper-plane"></i> Envoyer le Message</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ====== FOOTER ====== -->
+<!-- ============================================================ FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="footer-brand-name">Nduenga Agro Industries</span>
         <span class="footer-brand-tag">Produire au Congo · Transformer au Congo 🇨🇩</span>
-        <p>Entreprise agro-industrielle congolaise, Mbanza-Ngungu, Boko, Kongo Central, RDC.</p>
+        <p>Entreprise agro-industrielle congolaise implantée à Mbanza-Ngungu, Boko, Kongo Central. Engagée pour la souveraineté alimentaire et le développement durable de la RDC.</p>
         <div class="social-row">
           <a href="#" class="soc-btn"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="soc-btn"><i class="fab fa-linkedin-in"></i></a>
@@ -216,46 +630,56 @@
         </div>
       </div>
       <div>
-        <div class="footer-col-title">Pages</div>
+        <div class="footer-col-title">Navigation</div>
         <ul class="footer-links">
-          <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
-          <li><a href="qui-sommes-nous.html"><i class="fas fa-chevron-right"></i> Qui sommes-nous</a></li>
-          <li><a href="produits.html"><i class="fas fa-chevron-right"></i> Produits</a></li>
-          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-          <li><a href="impact.html"><i class="fas fa-chevron-right"></i> Impact</a></li>
-          <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          <li><a href="#accueil"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+          <li><a href="#a-propos"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Nos Produits</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Nos Services</a></li>
+          <li><a href="#impact"><i class="fas fa-chevron-right"></i> Notre Impact</a></li>
+          <li><a href="#localisation"><i class="fas fa-chevron-right"></i> Localisation</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Nos Produits</div>
         <ul class="footer-links">
-          <li><a href="produits.html"><i class="fas fa-chevron-right"></i> Maïs (6 000T/an)</a></li>
-          <li><a href="produits.html"><i class="fas fa-chevron-right"></i> Soja (4 000T/an)</a></li>
-          <li><a href="produits.html"><i class="fas fa-chevron-right"></i> Huile Végétale</a></li>
-          <li><a href="produits.html"><i class="fas fa-chevron-right"></i> Farine de Maïs</a></li>
-          <li><a href="produits.html"><i class="fas fa-chevron-right"></i> Ananas &amp; Cacao</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Maïs (6 000T/an)</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Soja (4 000T/an)</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Huile Végétale</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Farine de Maïs</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Ananas</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Cacao Premium</a></li>
+          <li><a href="#produits"><i class="fas fa-chevron-right"></i> Légumes &amp; Tomates</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-col-title">Contact</div>
+        <div class="footer-col-title">Nous Trouver</div>
         <ul class="footer-links">
-          <li><a href="contact.html"><i class="fas fa-map-marker-alt"></i> Mbanza-Ngungu, Boko, Kongo Central</a></li>
+          <li><a href="#localisation"><i class="fas fa-map-marker-alt"></i> Mbanza-Ngungu, Boko</a></li>
           <li><a href="tel:+243000000000"><i class="fas fa-phone"></i> +243 XXX XXX XXX</a></li>
           <li><a href="mailto:info@nduenga-agroind.cd"><i class="fas fa-envelope"></i> info@nduenga-agroind.cd</a></li>
-          <li><a href="#"><i class="fas fa-clock"></i> Lun–Sam : 8h–17h</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Lun – Sam : 8h – 17h</a></li>
         </ul>
-        <div class="footer-cta-box"><div class="footer-cta-box-lbl">🇨🇩 Fièrement Congolais</div><div class="footer-cta-box-txt">Produire · Transformer · Prospérer</div></div>
+        <div class="footer-cta-box">
+          <div class="footer-cta-box-lbl">🇨🇩 Fièrement Congolais</div>
+          <div class="footer-cta-box-txt">Produire au Congo · Transformer au Congo · Prospérer ensemble</div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Nduenga Agro Industries. Tous droits réservés. — Mbanza-Ngungu, Kongo Central, RDC.</p>
-      <div class="footer-bottom-links"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></div>
+      <p>© <span id="year"></span> Nduenga Agro Industries. Tous droits réservés. — Mbanza-Ngungu, Boko, Kongo Central, RDC.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/243000000000" target="_blank" rel="noopener" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/243000000000" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 <button class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></button>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
